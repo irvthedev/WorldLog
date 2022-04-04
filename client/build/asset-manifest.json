@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/WorldLog/static/css/main.073c9b0a.css",
+    "main.js": "/WorldLog/static/js/main.a4d89e7b.js",
+    "static/js/787.d1ce36a1.chunk.js": "/WorldLog/static/js/787.d1ce36a1.chunk.js",
+    "static/media/logo.svg": "/WorldLog/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/WorldLog/index.html",
+    "main.073c9b0a.css.map": "/WorldLog/static/css/main.073c9b0a.css.map",
+    "main.a4d89e7b.js.map": "/WorldLog/static/js/main.a4d89e7b.js.map",
+    "787.d1ce36a1.chunk.js.map": "/WorldLog/static/js/787.d1ce36a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.a4d89e7b.js"
+  ]
+}
