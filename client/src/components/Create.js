@@ -1,16 +1,67 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 
-export default class Create extends Component {
-  render() {
-    return (
-      <div className='container'>
-        <h4>Add visited destination</h4>
+function CreateDestination() {
+  const [input, setInput] = useState({
+      Name: '',
+      Country : '',
+      FutureDestination : false
+  })
 
-        <br />
+function handleChange(event){
+    const {name, value} = event.target;
 
-        <h4>Add desired desination</h4>
+    setInput(prevInput => {
+      return {
+        ...prevInput,
+        [name]: value
 
-      </div>
-    )
+      }
+    })
   }
+
+  function handleClick(event){
+    event.preventDefault();
+    console.log(input);
+  }
+
+  return (
+    <div className='container'>
+      <h4>Add visited destination</h4>
+      <form>
+          <div className='form-group'>
+            <input onChange={handleChange} name="Name" value={input.Name} autoComplete="off" className="form-control mb-2" placeholder="Enter destinaton name"></input>
+          </div>
+          <div className="form-group">
+            <input onChange={handleChange} name="Country" value={input.Country} autoComplete="off" className="form-control mb-2" placeholder="Enter country name"></input>
+          </div>
+          <div>
+            <button onClick={handleClick} className="btn btn-primary">Add visited destination</button>
+          </div>
+      </form>
+      <br />
+
+      {/* <h4>Add desired desination</h4>
+      <form>
+          <div className='form-group'>
+            <input onChange={handleChange} name="Name2" value={input.Name} autoComplete="off" className="form-control mb-2" placeholder="Enter destinaton name"></input>
+          </div>
+          <div className="form-group">
+            <input onChange={handleChange} name="Country2" value={input.Country} autoComplete="off" className="form-control mb-2" placeholder="Enter country name"></input>
+
+          </div>
+          <div>
+            <button onClick={handleClick} className="btn btn-primary">Add visited destination</button>
+          </div>
+      </form> */}
+
+    </div>
+  )
 }
+
+
+export default CreateDestination;
+  
+
+    
+
+    
